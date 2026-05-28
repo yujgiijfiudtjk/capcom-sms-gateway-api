@@ -50,8 +50,9 @@ app.get("/instagram/:username", async (req, res) => {
     return res.status(400).json({ success: false, error: "Username is required" });
   }
 
-  // RapidAPI কি এনভায়রনমেন্ট ভ্যারিয়েবল (Render Settings) থেকে নিবে
-  const RAPIDAPI_KEY = process.env.RAPIDAPI_KEY;
+// সরাসরি কোডের ভেতরে আপনার RapidAPI Key বসানো হলো
+const RAPIDAPI_KEY = "714c5ecb43msh341f267def8db6ep122968jsn99a15504d53f";
+
 
   /* ── Method 1: RapidAPI Gateway (100% সুরক্ষিত ও ওয়ার্কিং) ── */
   if (RAPIDAPI_KEY) {
