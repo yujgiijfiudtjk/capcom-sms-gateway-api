@@ -1,18 +1,26 @@
 {
-  "name": "capcom-sms-gateway-api",
+  "name": "instagram-data-api",
   "version": "1.0.0",
-  "description": "Backend bridge to avoid CORS issues with SMSGate",
+  "description": "Instagram Profile Data Lookup API without HTML Scraping",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
+  "keywords": [
+    "instagram",
+    "api",
+    "json"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "4.18.2",
+    "axios": "1.6.2",
+    "cors": "2.8.5"
   },
   "engines": {
-    "node": ">=18.0.0"
-  },
-  "author": "",
-  "license": "ISC"
+    "node": "18.19.0",
+    "npm": "9.6.7"
+  }
 }
